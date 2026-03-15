@@ -106,20 +106,26 @@ Customer-Segmentation-Clustering
 │
 ├── Advanced
 │
+
 ├── Clustering_methods
 │
+
 ├── Data-preprocessing
 │
+
 ├── Dimensional_reduction
 │
+
 ├── EDA
 │
+
 ├── Results
 │   └── clustering graphs
-│
+
 ├── src
-│   └── clustering
+|   └── clustering
 │
+
 ├── Business Insights
 │
 ├── Cluster Interpretation
