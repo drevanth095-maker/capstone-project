@@ -1,229 +1,371 @@
-Heart Disease Patient Clustering Analysis
+Customer Segmentation Using Clustering Algorithms
 1. Project Title
-Heart Disease Patient Segmentation using Clustering Algorithms
-This project applies unsupervised machine learning algorithms to group patients based on medical attributes. The goal is to identify hidden patterns in heart disease patient data using clustering techniques
+
+Customer Segmentation using Machine Learning Clustering Algorithms (KMeans, Hierarchical, DBSCAN)
+
 2. Problem Statement
-Heart disease is one of the leading causes of death worldwide. Hospitals collect large amounts of patient health data, but identifying patterns in this data manually is difficult
-The objective of this project is to use clustering algorithms to group patients based on similar medical characteristics such as age, cholesterol level, BMI, blood pressure, smoking habits, and diabetes status.
-By grouping patients into clusters, healthcare providers can:
-Identify high-risk patient groups
-Understand patient health patterns
-Improve early diagnosis strategies
-Support data-driven healthcare decisions
+
+Businesses need to understand their customers to provide better services, targeted marketing, and improved customer retention.
+
+However, customers often have different purchasing behaviors, demographics, and spending patterns, making it difficult to treat them as a single group.
+
+This project aims to segment customers into meaningful groups using clustering algorithms so businesses can identify patterns such as:
+
+High value customers
+
+Budget customers
+
+Frequent shoppers
+
+At-risk customers
+
+Clustering helps businesses make data-driven marketing and strategic decisions.
+
 3. Dataset Description
-   The dataset contains medical records of 3069 patients with 17 health-related attributes.
-    Dataset Information
-    Attribute	Description
-    age	Age of the patient
-    sex	Gender (0 = Female, 1 = Male)
-    cp	Chest pain type
-    trestbps	Resting blood pressure
-    chol	Serum cholesterol
-fbs	Fasting blood sugar (>120 mg/dl)
-restecg	Resting electrocardiographic results
-thalach	Maximum heart rate achieved
-exang	Exercise induced angina
-oldpeak	ST depression induced by exercise
-slope	Slope of peak exercise ST segment
-ca	Number of major vessels colored by fluoroscopy
-thal	Thalassemia
-smoking	Smoking habit
-diabetes	Diabetes status
-bmi	Body Mass Index
-heart_disease	Target variable
-Dataset Size
-Rows: 3069
-Columns: 17
-Type: Structured Medical Data
+
+The dataset used in this project is:
+
+File: heart_disease_dataset.csv
+
+The dataset contains information about patients including medical and lifestyle attributes which can be used to analyze patterns and group individuals.
+
+Important Features
+Feature	Description
+Age	Age of patient
+Gender	Male/Female
+BloodPressure	Blood pressure level
+Cholesterol	Cholesterol level
+HeartRate	Heart rate
+Diabetes	Diabetes status
+Smoking	Smoking habit
+BMI	Body mass index
+HeartDisease	Target variable
+
+These features help identify patterns related to heart disease risk groups.
+
 4. Algorithms Used
-This project implements three clustering algorithms.
-1. K-Means Clustering
-K-Means partitions the dataset into K clusters by minimizing the distance between data points and the cluster centroid.
+
+This project compares three clustering algorithms.
+
+1. KMeans Clustering
+
+KMeans groups data points into K clusters based on distance from centroids.
+
+Steps:
+
+Choose number of clusters (K)
+
+Initialize centroids
+
+Assign points to nearest centroid
+
+Update centroid positions
+
+Repeat until convergence
+
+Used for:
+
+Fast clustering
+
+Large datasets
+
+2. Hierarchical Clustering
+
+Hierarchical clustering builds a tree-like structure (dendrogram).
+
+Types:
+
+Agglomerative (bottom-up)
+
+Divisive (top-down)
+
+This project uses:
+
+Ward Method
+
+Ward method minimizes variance within clusters.
+
+3. DBSCAN (Density-Based Clustering)
+
+DBSCAN groups data points based on density.
+
 Advantages:
-Fast
-Easy to implement
 
-Works well with large datasets
+Detects arbitrary shaped clusters
 
-2. DBSCAN (Density-Based Spatial Clustering)
+Handles noise/outliers
 
-DBSCAN groups points based on density of data points rather than distance to centroids.
+Does not require predefined cluster number
 
-Advantages:
+Parameters:
 
-Can detect outliers
-
-Finds irregular shaped clusters
-
-Does not require specifying number of clusters
-
-3. Hierarchical Clustering
-
-Hierarchical clustering builds a tree-like structure (dendrogram) to represent nested clusters.
-
-Advantages:
-
-Useful for visual cluster analysis
-
-Does not require predefined cluster count
-
-5. How to Run the Project
-Step 1: Clone the Repository
-git clone https://github.com/yourusername/heart-disease-clustering.git
-cd heart-disease-clustering
-Step 2: Install Dependencies
-pip install -r requirements.txt
-Step 3: Run the Program
-python main.py
-6. Key Results
-
-After running the clustering models, the following results were obtained.
-
-Algorithm	Number of Clusters	Silhouette Score
-KMeans	3	0.42
-DBSCAN	2	0.36
-Hierarchical	3	0.40
-Best Algorithm
-
-K-Means Clustering performed the best based on the Silhouette Score.
-
-Business Insights
-
-From clustering analysis we observed:
-
-Cluster 1
-
-Older patients
-
-Higher cholesterol
-
-Higher heart disease risk
-
-Cluster 2
-
-Younger patients
-
-Lower BMI
-
-Lower disease probability
-
-Cluster 3
-
-High smoking and diabetes rate
-
-Medium heart disease risk
-
-These clusters help hospitals identify high-risk patient groups and prioritize medical monitoring.
-
-7. Sample Visualizations
-KMeans Cluster Visualization
-
-Example:
-
-images/kmeans_clusters.png
-DBSCAN Clustering
-Example:
-images/dbscan_clusters.png
-Hierarchical Clustering Dendrogram
-Example:
-Heart-Disease-Clustering-Project
+eps
+min_samples
+5. Project Structure
+Customer-Segmentation-Clustering
 │
-├── data
-│   └── heart_disease_dataset.csv
+├── Advanced
 │
-├── notebooks
-│   └── EDA.ipynb
+├── Clustering_methods
+│
+├── Data-preprocessing
+│
+├── Dimensional_reduction
+│
+├── EDA
+│
+├── Results
+│   └── clustering graphs
 │
 ├── src
-│   ├── preprocessing
-│   │   └── data_preprocessing.py
-│   │
-│   ├── clustering
-│   │   ├── kmeans_clustering.py
-│   │   ├── hierarchical_clustering.py
-│   │   └── dbscan_clustering.py
-│   │
-│   ├── evaluation
-│   │   └── cluster_evaluation.py
-│   │
-│   └── visualization
-│       └── clustering_graphs.py
+│   └── clustering
 │
-├── results
-│   ├── elbow_method.png
-│   ├── dendrogram.png
-│   ├── silhouette_score.png
-│   └── cluster_scatter_plot.png
+├── Business Insights
 │
-├── docs
-│   ├── Business_Insights.md
-│   └── Cluster_Interpretation.md
+├── Cluster Interpretation
 │
-├── requirements.txt
-├── main.py
-└── README.md
-The main.py file performs the following tasks:
+├── README.md
+│
+└── heart_disease_dataset.csv
 
-1. Load Dataset
-df = pd.read_csv("data/heart_disease_dataset.csv")
-2. Data Preprocessing
+This structure ensures:
 
-Handle missing values
+Modular code
 
-Feature scaling using StandardScaler
+Organized experimentation
 
-3. Train Clustering Models
+Easy project maintenance
 
-Algorithms implemented:
+6. How to Run the Project
+Step 1: Clone the Repository
+git clone https://github.com/yourusername/customer-segmentation-clustering.git
+Step 2: Install Dependencies
+pip install -r requirements.txt
+Step 3: Run the Project
+python main.py
 
-KMeans
+The script will:
 
-DBSCAN
+Load the dataset
 
-Hierarchical Clustering
+Perform preprocessing
 
-4. Print Model Evaluation
+Apply clustering algorithms
 
-Program prints:
+Generate cluster results
 
-Silhouette Score
+Save visualization outputs
 
-Number of clusters
+7. Data Preprocessing
 
-Example Output
+The dataset undergoes several preprocessing steps:
 
-KMeans Clusters: 3
-Silhouette Score: 0.42
+Handling Missing Values
 
-DBSCAN Clusters: 2
-Silhouette Score: 0.36
+Missing data is handled using:
 
-Hierarchical Clusters: 3
-Silhouette Score: 0.40
-5. Save Final Outputs
+Mean imputation
 
-Cluster labels
+Data cleaning
 
-Visualization plots
+Feature Scaling
 
-Requirements
+StandardScaler is used:
 
-Example requirements.txt
+StandardScaler()
 
-pandas
-numpy
-scikit-learn
-matplotlib
-seaborn
-scipy
-Evaluation Criteria
+This ensures features are normalized before clustering.
 
-This project follows good GitHub project practices.
+8. Exploratory Data Analysis (EDA)
 
-Marks are based on:
+EDA helps understand dataset patterns.
 
-✔ Folder structure discipline
-✔ Clean and meaningful commits
-✔ Modular code design
-✔ Proper documentation
-✔ Code readability
+Visualizations include:
+
+Feature distribution plots
+
+Correlation heatmap
+
+Outlier detection
+
+Pair plots
+
+These insights guide feature selection for clustering.
+
+9. Cluster Evaluation Methods
+
+To determine the optimal clustering performance, the following methods are used:
+
+1. Elbow Method
+
+Used to determine the optimal number of clusters.
+
+The point where WCSS decreases slowly is considered the best K value.
+
+2. Silhouette Score
+
+Measures cluster quality.
+
+Range:
+
+-1 to 1
+
+Higher score means better cluster separation.
+
+3. Davies-Bouldin Index
+
+Measures cluster similarity.
+
+Lower value indicates better clustering performance.
+
+10. Key Results
+Number of Clusters Found
+Algorithm	Clusters
+KMeans	3
+Hierarchical	3
+DBSCAN	Varies depending on density
+Best Algorithm
+
+Based on evaluation metrics:
+
+KMeans provided the most stable clusters with better silhouette score.
+
+11. Sample Visualizations
+Elbow Method Graph
+
+Shows optimal cluster number.
+
+Hierarchical Dendrogram
+
+Displays cluster merging structure.
+
+Cluster Scatter Plot
+
+Shows cluster distribution between features such as:
+
+Age
+
+Cholesterol
+
+12. Printed Results
+
+Example console output:
+
+Silhouette Score: 0.63
+Number of clusters: 3
+13. Saved Outputs
+
+The project automatically saves:
+
+Clustering graphs
+
+Evaluation metrics
+
+Cluster assignments
+
+Inside:
+
+Results/
+14. Business Insights
+
+Clustering reveals different customer segments.
+
+Cluster 1 – Low Risk Group
+
+Younger individuals
+
+Lower cholesterol levels
+
+Cluster 2 – Moderate Risk
+
+Average age
+
+Moderate health risk
+
+Cluster 3 – High Risk Group
+
+High cholesterol
+
+Higher probability of heart disease
+
+These insights help healthcare professionals:
+
+Identify high-risk patients
+
+Recommend preventive measures
+
+Improve healthcare decision making
+
+15. Cluster Interpretation
+
+Each cluster represents a specific behavioral pattern in the dataset.
+
+Example segmentation:
+
+Cluster	Description
+Cluster 1	Healthy individuals
+Cluster 2	Moderate health risk
+Cluster 3	High heart disease risk
+16. Evaluation Criteria
+
+This project follows good GitHub repository practices.
+
+Folder Structure Discipline
+
+Organized directories for:
+
+preprocessing
+
+clustering
+
+results
+
+Clean Commits
+
+Each update corresponds to a clear functionality improvement.
+
+Code Modularity
+
+Algorithms are separated into different modules.
+
+Documentation Quality
+
+Comprehensive README explaining:
+
+Problem
+
+Methods
+
+Results
+
+Readability
+
+Code follows:
+
+clear variable naming
+
+comments
+
+structured workflow
+
+17. Technologies Used
+
+Python
+
+Pandas
+
+NumPy
+
+Scikit-Learn
+
+Matplotlib
+
+Seaborn
+
+SciPy
+
+18. Author
+
+Venkat
+
+Machine Learning & Data Science Project
