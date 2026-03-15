@@ -30,9 +30,12 @@ File: heart_disease_dataset.csv
 The dataset contains information about patients including medical and lifestyle attributes which can be used to analyze patterns and group individuals.
 
 Age
-gender
-Blood pressure
-cheloster
+
+Gender
+
+Blood Pressure                                  blood pressure level
+
+bmi                                             body mass index
 
 These features help identify patterns related to heart disease risk groups.
 
