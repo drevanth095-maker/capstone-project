@@ -1,9 +1,9 @@
 Customer Segmentation Using Clustering Algorithms
-1. Project Title
+➡️1. Project Title
 
 Customer Segmentation using Machine Learning Clustering Algorithms (KMeans, Hierarchical, DBSCAN)
 
-2. Problem Statement
+➡️2. Problem Statement
 
 Businesses need to understand their customers to provide better services, targeted marketing, and improved customer retention.
 
@@ -21,11 +21,11 @@ At-risk customers
 
 Clustering helps businesses make data-driven marketing and strategic decisions.
 
-3. Dataset Description
+📁3. Dataset Description
 
 The dataset used in this project is:
 
-File: heart_disease_dataset.csv
+📁File: heart_disease_dataset.csv
 
 The dataset contains information about patients including medical and lifestyle attributes which can be used to analyze patterns and group individuals.
 
@@ -44,11 +44,11 @@ The dataset contains information about patients including medical and lifestyle 
 
 There features help identify patterns related to heart disease risk groups.
 
-4. Algorithms Used
+🔍4. Algorithms Used
 
 This project compares three clustering algorithms.
 
-1. KMeans Clustering
+➡️1. KMeans Clustering
 
 KMeans groups data points into K clusters based on distance from centroids.
 
@@ -70,7 +70,7 @@ Fast clustering
 
 Large datasets
 
-2. Hierarchical Clustering
+➡️2. Hierarchical Clustering
 
 Hierarchical clustering builds a tree-like structure (dendrogram).
 
@@ -86,7 +86,7 @@ Ward Method
 
 Ward method minimizes variance within clusters.
 
-3. DBSCAN (Density-Based Clustering)
+➡️3. DBSCAN (Density-Based Clustering)
 
 DBSCAN groups data points based on density.
 
@@ -102,7 +102,7 @@ Parameters:
 
 eps
 min_samples
-5. Project Structure
+🗂️5. Project Structure
 Customer-Segmentation-Clustering
 
 ├── Advanced
@@ -137,21 +137,20 @@ Organized experimentation
 
 Easy project maintenance
 
-6. How to Run the Project
+📌6. How to Run the Project
    
-Step 1: Clone the Repository
+➡️Step 1: Clone the Repository
 
-git clone https://github.com/yourusername/customer-segmentation-clustering.git
-
-Step 2: Install Dependencies
+git clone https://github.com/drevanth095-maker/customer---segmentation---unsupervised-.git
+➡️Step 2: Install Dependencies
 
 pip install -r requirements.txt
 
-Step 3: Run the Project
+➡️Step 3: Run the Project
 
 python main.py
 
-7. Sample visuvalization
+✅7. Sample visuvalization
 
 | Algorithm                   | Number of Clusters | Silhouette Score | Performance |
 | --------------------------- | ------------------ | ---------------- | ----------- |
@@ -160,7 +159,7 @@ python main.py
 |  Hierarchical Clustering    | 3                  | 0.40             | Good        |
 
 
-8. Exploratory Data Analysis (EDA)
+✅8. Exploratory Data Analysis (EDA)
 
 EDA helps understand dataset patterns
 
@@ -176,29 +175,37 @@ Pair plots
 
 These insights guide feature selection for clustering
 
-9. Cluster Evaluation Methods
+📝9.Data preprocessing:-
+
+ ✅1.Handling missing values
+ ✅2.feature scaling
+ ✅3.feature encoding
+ ✅4.outlier detection
+ ✅5.RMF features
+ 
+📌10. Cluster Evaluation Methods
 
 To determine the optimal clustering performance and the following methods are used:-
 
-1. Elbow Method
+✅1. Elbow Method
 
 Used to determine the optimal number of clusters
 
 The point where WCSS decreases slowly is considered the best K value
 
-2. Silhouette Score
+✅2. Silhouette Score
 
 Measures cluster quality
 
 Higher score means better cluster separation
 
-3. Davies-Bouldin Index
+✅3. Davies-Bouldin Index
 
 Measures cluster similarity
 
 Lower value indicates better clustering performance.
 
-10.Key features
+🔍11.Key features
 
   | Algorithm    | Clusters                    |
 | ------------ | --------------------------- |
@@ -206,13 +213,13 @@ Lower value indicates better clustering performance.
 | Hierarchical | 3                           |
 | DBSCAN       | Varies depending on density |
 
-Best Algorithm
+➡️Best Algorithm
 
 Based on evaluation metrics:-
 
-KMeans provided the most stable clusters with better silhouette score
+➡️KMeans provided the most stable clusters with better silhouette score
 
-11. Sample Visualization:-
+📌12. Sample Visualization:-
 Elbow Method Graph
 
 Shows optimal cluster number
@@ -229,7 +236,7 @@ Age
 
 Cholesterol
 
-12. Printed Results
+📌13. Printed Results
 
 Example console output:
 
@@ -237,7 +244,7 @@ Silhouette Score: 0.42
 Number of clusters: 3
 
 Results/
-13. Business Insights
+📈14. Business Insights
 
 Clustering reveals different customer segments
 
@@ -260,7 +267,7 @@ Recommend preventive measures
 
 Improve healthcare decision making
 
-14. Cluster Interpretation
+✅15. Cluster Interpretation
 
 Each cluster represents a specific behavioral pattern in the dataset
 
@@ -272,7 +279,7 @@ Cluster	Description
 | Cluster 2 | Moderate health risk    |
 | Cluster 3 | High heart disease risk |
 
-15. Technologies Used
+🖊️16. Technologies Used
 
 Python
 
@@ -288,8 +295,7 @@ Seaborn
 
 SciPy
 
-16. Author
+📝Final conclusion:-
+This project demonstrates how unsupervised machine learning can be used to uncover hidden patterns in healthcare data and support better clinical decision making
 
-Revanth
-
-Machine Learning & Data Science Project
+Clustering techniques like  Data Preprocessing, Exploratory Data Analysis (EDA), using clustering algorithms such as K-Means Clustering, Hierarchical Clustering, and DBSCAN, the Marketing and Businnes Insights, and Evaluation methods such as the Elbow Method and Silhouette Score were used to determine the optimal number of clusters and assess the quality of clustering
