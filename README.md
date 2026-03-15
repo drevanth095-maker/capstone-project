@@ -33,9 +33,9 @@ Age
 
 Gender
 
-Blood Pressure                                  blood pressure level
-
-bmi                                             body mass index
+Blood Pressure                                                                              blood pressure level
+ 
+bmi                                                                                          body mass index
 
 These features help identify patterns related to heart disease risk groups.
 
