@@ -33,11 +33,25 @@ Age
 
 Gender
 
-Blood Pressure                                                                              blood pressure level
- 
-bmi                                                                                          body mass index
+Blood Pressure
 
-These features help identify patterns related to heart disease risk groups.
+Blood pressure level
+
+Cholestrol 
+
+Cholestrol level
+
+Heart level
+
+Diabeties
+
+Smoking
+
+BMI
+
+Heart disease
+
+There features help identify patterns related to heart disease risk groups.
 
 4. Algorithms Used
 
@@ -156,27 +170,21 @@ Save visualization outputs
 
 7. Data Preprocessing
 
-The dataset undergoes several preprocessing steps:
+KMeans Clusters: 3
 
-Handling Missing Values
+Silhouette Score: 0.42
 
-Missing data is handled using:
+DBSCAN Clusters: 2
 
-Mean imputation
+Silhouette Score: 0.36
 
-Data cleaning
+Hierarchical Clusters: 3
 
-Feature Scaling
-
-StandardScaler is used:
-
-StandardScaler()
-
-This ensures features are normalized before clustering.
+Silhouette Score: 0.40
 
 8. Exploratory Data Analysis (EDA)
 
-EDA helps understand dataset patterns.
+EDA helps understand dataset patterns
 
 Visualizations include:
 
@@ -192,54 +200,52 @@ These insights guide feature selection for clustering.
 
 9. Cluster Evaluation Methods
 
-To determine the optimal clustering performance, the following methods are used:
+To determine the optimal clustering performance and the following methods are used:-
 
 1. Elbow Method
 
-Used to determine the optimal number of clusters.
+Used to determine the optimal number of clusters
 
-The point where WCSS decreases slowly is considered the best K value.
+The point where WCSS decreases slowly is considered the best K value
 
 2. Silhouette Score
 
-Measures cluster quality.
+Measures cluster quality
 
-Range:
-
--1 to 1
-
-Higher score means better cluster separation.
+Higher score means better cluster separation
 
 3. Davies-Bouldin Index
 
-Measures cluster similarity.
+Measures cluster similarity
 
 Lower value indicates better clustering performance.
 
-10. Key Results
-Number of Clusters Found
-Algorithm	Clusters
-KMeans	3
-Hierarchical	3
-DBSCAN	Varies depending on density
+10.Key features
+
+  | Algorithm    | Clusters                    |
+| ------------ | --------------------------- |
+| KMeans       | 3                           |
+| Hierarchical | 3                           |
+| DBSCAN       | Varies depending on density |
+
 Best Algorithm
 
-Based on evaluation metrics:
+Based on evaluation metrics:-
 
-KMeans provided the most stable clusters with better silhouette score.
+KMeans provided the most stable clusters with better silhouette score
 
-11. Sample Visualizations
+11. Sample Visualization:-
 Elbow Method Graph
 
-Shows optimal cluster number.
+Shows optimal cluster number
 
 Hierarchical Dendrogram
 
-Displays cluster merging structure.
+Displays cluster merging structure
 
 Cluster Scatter Plot
 
-Shows cluster distribution between features such as:
+Shows cluster distribution between features such as:-
 
 Age
 
@@ -249,7 +255,7 @@ Cholesterol
 
 Example console output:
 
-Silhouette Score: 0.63
+Silhouette Score: 0.42
 Number of clusters: 3
 13. Saved Outputs
 
@@ -301,30 +307,22 @@ Each cluster represents a specific behavioral pattern in the dataset.
 Example segmentation:
 
 Cluster	Description
-Cluster 1	Healthy individuals
-Cluster 2	Moderate health risk
-Cluster 3	High heart disease risk
+
+| Cluster   | Description             |
+| --------- | ----------------------- |
+| Cluster 1 | Healthy individuals     |
+| Cluster 2 | Moderate health risk    |
+| Cluster 3 | High heart disease risk |
+
 16. Evaluation Criteria
 
 This project follows good GitHub repository practices.
 
 Folder Structure Discipline
 
-Organized directories for:
-
-preprocessing
-
-clustering
-
-results
-
-Clean Commits
-
-Each update corresponds to a clear functionality improvement.
-
 Code Modularity
 
-Algorithms are separated into different modules.
+Algorithms are separated into different modules
 
 Documentation Quality
 
@@ -364,6 +362,6 @@ SciPy
 
 18. Author
 
-Venkat
+Revanth
 
 Machine Learning & Data Science Project
