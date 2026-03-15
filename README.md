@@ -29,27 +29,18 @@ File: heart_disease_dataset.csv
 
 The dataset contains information about patients including medical and lifestyle attributes which can be used to analyze patterns and group individuals.
 
-Age
+| Feature       | Description          |
+| ------------- | -------------------- |
+| Age           | Age of patient       |
+| Gender        | Male/Female          |
+| BloodPressure | Blood pressure level |
+| Cholesterol   | Cholesterol level    |
+| HeartRate     | Heart rate           |
+| Diabetes      | Diabetes status      |
+| Smoking       | Smoking habit        |
+| BMI           | Body mass index      |
+| HeartDisease  | Target variable      |
 
-Gender
-
-Blood Pressure
-
-Blood pressure level
-
-Cholestrol 
-
-Cholestrol level
-
-Heart level
-
-Diabeties
-
-Smoking
-
-BMI
-
-Heart disease
 
 There features help identify patterns related to heart disease risk groups.
 
@@ -147,40 +138,27 @@ Organized experimentation
 Easy project maintenance
 
 6. How to Run the Project
+   
 Step 1: Clone the Repository
+
 git clone https://github.com/yourusername/customer-segmentation-clustering.git
 
 Step 2: Install Dependencies
+
 pip install -r requirements.txt
 
 Step 3: Run the Project
+
 python main.py
 
-The script will:
+7. Sample visuvalization
 
-Load the dataset
+| Algorithm                   | Number of Clusters | Silhouette Score | Performance |
+| --------------------------- | ------------------ | ---------------- | ----------- |
+|  K-Means                    | 3                  | 0.42             | Best        |
+|  DBSCAN**                   | 2                  | 0.36             | Moderate    |
+|  Hierarchical Clustering    | 3                  | 0.40             | Good        |
 
-Perform preprocessing
-
-Apply clustering algorithms
-
-Generate cluster results
-
-Save visualization outputs
-
-7. Data Preprocessing
-
-KMeans Clusters: 3
-
-Silhouette Score: 0.42
-
-DBSCAN Clusters: 2
-
-Silhouette Score: 0.36
-
-Hierarchical Clusters: 3
-
-Silhouette Score: 0.40
 
 8. Exploratory Data Analysis (EDA)
 
@@ -196,7 +174,7 @@ Outlier detection
 
 Pair plots
 
-These insights guide feature selection for clustering.
+These insights guide feature selection for clustering
 
 9. Cluster Evaluation Methods
 
@@ -257,36 +235,18 @@ Example console output:
 
 Silhouette Score: 0.42
 Number of clusters: 3
-13. Saved Outputs
-
-The project automatically saves:
-
-Clustering graphs
-
-Evaluation metrics
-
-Cluster assignments
-
-Inside:
 
 Results/
-14. Business Insights
+13. Business Insights
 
-Clustering reveals different customer segments.
+Clustering reveals different customer segments
 
-Cluster 1 – Low Risk Group
+| Cluster       | Group Type          | Characteristics                                                                     |
+| ------------- | ------------------- | ----------------------------------------------------------------------------------- |
+| **Cluster 1** | Low Risk Group      | Younger individuals with lower cholesterol levels                                   |
+| **Cluster 2** | Moderate Risk Group | Patients with average age and moderate health risk                                  |
+| **Cluster 3** | High Risk Group     | Patients with higher health risk indicators and potential heart disease probability |
 
-Younger individuals
-
-Lower cholesterol levels
-
-Cluster 2 – Moderate Risk
-
-Average age
-
-Moderate health risk
-
-Cluster 3 – High Risk Group
 
 High cholesterol
 
@@ -300,11 +260,9 @@ Recommend preventive measures
 
 Improve healthcare decision making
 
-15. Cluster Interpretation
+14. Cluster Interpretation
 
-Each cluster represents a specific behavioral pattern in the dataset.
-
-Example segmentation:
+Each cluster represents a specific behavioral pattern in the dataset
 
 Cluster	Description
 
@@ -314,37 +272,7 @@ Cluster	Description
 | Cluster 2 | Moderate health risk    |
 | Cluster 3 | High heart disease risk |
 
-16. Evaluation Criteria
-
-This project follows good GitHub repository practices.
-
-Folder Structure Discipline
-
-Code Modularity
-
-Algorithms are separated into different modules
-
-Documentation Quality
-
-Comprehensive README explaining:
-
-Problem
-
-Methods
-
-Results
-
-Readability
-
-Code follows:
-
-clear variable naming
-
-comments
-
-structured workflow
-
-17. Technologies Used
+15. Technologies Used
 
 Python
 
@@ -360,7 +288,7 @@ Seaborn
 
 SciPy
 
-18. Author
+16. Author
 
 Revanth
 
