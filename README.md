@@ -104,8 +104,10 @@ min_samples
 5. Project Structure
 Customer-Segmentation-Clustering
 │
+
 ├── Advanced
 │
+
 
 ├── Clustering_methods
 │
@@ -113,11 +115,15 @@ Customer-Segmentation-Clustering
 ├── Data-preprocessing
 │
 
+
 ├── Dimensional_reduction
 │
 
+
+
 ├── EDA
 │
+
 
 ├── Results
 │   └── clustering graphs
@@ -128,10 +134,13 @@ Customer-Segmentation-Clustering
 
 ├── Business Insights
 │
+
 ├── Cluster Interpretation
 │
+
 ├── README.md
 │
+
 └── heart_disease_dataset.csv
 
 This structure ensures:
