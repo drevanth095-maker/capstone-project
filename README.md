@@ -139,8 +139,10 @@ Easy project maintenance
 6. How to Run the Project
 Step 1: Clone the Repository
 git clone https://github.com/yourusername/customer-segmentation-clustering.git
+
 Step 2: Install Dependencies
 pip install -r requirements.txt
+
 Step 3: Run the Project
 python main.py
 
