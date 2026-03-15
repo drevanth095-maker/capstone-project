@@ -103,6 +103,7 @@ eps
 min_samples
 5. Project Structure
 Customer-Segmentation-Clustering
+
 ├── Advanced
 
 ├── Clustering_methods
@@ -114,13 +115,12 @@ Customer-Segmentation-Clustering
 ├── EDA
 
 ├── Results
-│   └── clustering graphs
+└── clustering graphs
 
 ├── src
-|   └── clustering
+└── clustering
 
 ├── Business Insights
-│
 
 ├── Cluster Interpretation
 
