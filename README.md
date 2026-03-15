@@ -29,13 +29,10 @@ File: heart_disease_dataset.csv
 
 The dataset contains information about patients including medical and lifestyle attributes which can be used to analyze patterns and group individuals.
 
-Important features                               Description
-
-Age                                               Age of patient                
-Gender                                            Male/female
-BloodPressure                                     Blood pressure level
-Cholestrol                                        Cholestrol level
-Heart rate                                        Heart rate
+Age
+gender
+Blood pressure
+cheloster
 
 These features help identify patterns related to heart disease risk groups.
 
